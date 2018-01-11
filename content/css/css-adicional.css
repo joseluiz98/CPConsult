@@ -2,12 +2,18 @@ html {
     background-color: #343a40;
 }
 
+body, html {
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    font-weight: 400;
+}
+
 body {
-    font-size: 2.5em;
+    font-size: 62.5%;
     color: #fff;
 }
 
-.hero {
+.presenting {
     background-color: #262c30;
     background-image: url("../images/presentation.jpg");
     background-repeat: no-repeat;
@@ -24,21 +30,23 @@ body {
     justify-content: center;
 }
 
-.hero .hero-inner {
+.presenting .presenting-inner {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    padding: 170px 10px;
+    padding: 130px 10px;
 }
 
-img.hero-logo {
-    width: 18em;
+img.presenting-logo {
+    width: 70em;
     padding-left: 0.1em;
     padding-right: 0.2em;
 }
 
-.company-desc {
+.company-call {
+    font-size: 4em;
     padding: 35px 0;
+    padding-bottom: 70px;
     text-shadow: 2px 2px black;
 }
 
@@ -46,8 +54,22 @@ img.hero-logo {
     margin-right: 15px;
 }
 
-.company-about-button {
+button {
     text-transform: uppercase;
-    font-size: 0.4em;
+}
+
+.company-about-button {
+    font-size: 1.5em;
     text-shadow: 1px 1px #343a40;
+}
+
+nav.navbar {
+    font-size: 2em;
+    background-color: #0b171e !important;
+}
+
+@media screen and (min-width: 1000px){
+    nav.navbar {
+        padding: 0 5em;
+    }
 }
