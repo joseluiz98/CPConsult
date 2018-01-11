@@ -1,11 +1,12 @@
-html {
-    background-color: #343a40;
-}
-
+/* Estilos Gerais */
 body, html {
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
     font-weight: 400;
+}
+
+html {
+    background-color: #343a40;
 }
 
 body {
@@ -13,6 +14,11 @@ body {
     color: #fff;
 }
 
+p {
+    margin: 1em 0;
+}
+
+/* Estilos Cabeçalho (Apresentação) */
 .presenting {
     background-color: #262c30;
     background-image: url("../images/presentation.jpg");
@@ -54,6 +60,7 @@ img.presenting-logo {
     margin-right: 15px;
 }
 
+/* Estilos Navbar */
 button {
     text-transform: uppercase;
 }
@@ -68,6 +75,34 @@ nav.navbar {
     background-color: #0b171e !important;
 }
 
+/* Estilos Containers */
+/* Seção "Sobre A Empresa" */
+.company-about-section {
+    background-image: url("../images/business-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #fff;
+    margin: 0;
+    padding: 40px 10px;
+}
+
+.company-about-inner p, .company-about-inner h2 {
+    color: #87868a;
+}
+
+.company-about-inner {
+    position: relative;
+    margin-left: 2em;
+}
+
+
+.company-about-inner p {
+    color: #0b171e;
+    font-size: 2em;
+}
+
+/* Media Queries */
 @media screen and (min-width: 1000px){
     nav.navbar {
         padding: 0 5em;
