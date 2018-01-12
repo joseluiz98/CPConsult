@@ -22,7 +22,7 @@
                 <img class="presenting-logo img-fluid" src="content/images/logo.png" alt="Logo">
             </div>
             <div class="company-call">Assessoria e Consultoria</div>
-            <button type="button" class="btn btn-primary btn-lg company-about-button">
+            <button type="button" id="company-about-button" class="btn btn-primary btn-lg">
             <div class="oi oi-info info-company"></div> Sobre a Empresa
             </button>
         </div>
@@ -39,7 +39,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">A Empresa<span class="sr-only">(current)</span></a>
+                <a id="navbar-company-about" class="nav-link" href="#company-about-section">A Empresa<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -54,7 +54,7 @@
             </li>
             
             <li class="nav-item">
-                <a class="nav-link" href="#">Contato</a>
+                <a class="nav-link">Contato</a>
             </li>
             </ul>
             <span class="navbar-text">
@@ -65,8 +65,21 @@
     <!-- Fim Navbar -->
 
     <!-- Início Corpo -->
-    <section class="section-only-left container-fluid company-about-section">
-        <div class="container-fluid company-about-inner col-7">
+    <!-- Seção "Sobre A Empresa" -->
+    <section id="company-about-section" class="section section-only-left container-fluid">
+        <div class="container-fluid company-about-inner section-inner col-7">
+            <h2>Sobre a Empresa</h2>
+            <p>A CP ASSESSORIA E CONSULTORIA é uma empresa especializada em Gestão e Gerenciamento, Inovações Tecnológicas, Sistemas de Segurança, 
+                Projetos e Treinamentos, com atuação em todo o Tenitalio Nacional. Contamos com parcerias estratégicas com profissionais e empresas
+                fornecedoras de soluções e, também, com renomadas instituições de ensino para atender, de forma personalizada, as necessidades dos 
+                nossos clintes.
+            </p>
+        </div>
+    </section>
+
+    <!-- Seção "Missão" -->
+    <section id="company-mission-section" class="section section-only-left container-fluid">
+        <div class="container-fluid company-mission-inner section-inner col-7">
             <h2>Sobre a Empresa</h2>
             <p>A CP ASSESSORIA E CONSULTORIA é uma empresa especializada em Gestão e Gerenciamento, Inovações Tecnológicas, Sistemas de Segurança, 
                 Projetos e Treinamentos, com atuação em todo o Tenitalio Nacional. Contamos com parcerias estratégicas com profissionais e empresas

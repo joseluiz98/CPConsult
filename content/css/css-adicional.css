@@ -15,7 +15,15 @@ body {
 }
 
 p {
-    margin: 1em 0;
+    margin: 1em 0.5em 1em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #87868a;
+    text-transform: uppercase;
+    text-shadow: 0.5px 0.5px #000;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 /* Estilos Cabeçalho (Apresentação) */
@@ -65,7 +73,7 @@ button {
     text-transform: uppercase;
 }
 
-.company-about-button {
+#company-about-button {
     font-size: 1.5em;
     text-shadow: 1px 1px #343a40;
 }
@@ -76,35 +84,75 @@ nav.navbar {
 }
 
 /* Estilos Containers */
+
+.section {
+    margin: 0;
+    margin-top: 5em;
+    padding: 40px 10px;
+    padding-top: 0px;
+}
 /* Seção "Sobre A Empresa" */
-.company-about-section {
+#company-about-section {
     background-image: url("../images/business-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center bottom;
     background-color: #fff;
-    margin: 0;
-    padding: 40px 10px;
 }
 
-.company-about-inner p, .company-about-inner h2 {
-    color: #87868a;
+#company-mission-section {
+    margin-top: 3em !important;
+    background-image: url("../images/business-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    background-color: #0b171e !important;
 }
 
-.company-about-inner {
+.section-inner {
     position: relative;
     margin-left: 2em;
 }
 
 
-.company-about-inner p {
-    color: #0b171e;
+.section-inner p {
     font-size: 2em;
 }
 
+.company-about-inner {
+    color: #0b171e;
+}
+
+.company-mission-inner {
+    color: #fff;
+}
+
 /* Media Queries */
+
+@media screen and (max-width: 1083px){
+    .section {
+        margin-top: 0;
+        padding-top: 40px;
+    }
+}
+
 @media screen and (min-width: 1000px){
     nav.navbar {
         padding: 0 5em;
+    }
+}
+
+@media screen and (max-width: 971px){
+    #company-about-section {
+        background-position: 55% -31px;
+    }
+}
+
+@media screen and (max-width: 820px){
+    .company-about-inner {
+        max-width: 98%;
+    }
+    #company-about-section {
+        background-image: none;
     }
 }
