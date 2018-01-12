@@ -1,4 +1,4 @@
-$(document).ready(function(){    
+$(document).ready(function(){
     // Scripts para scroll down de página quando clica nos botões
     document.getElementById("company-about-button").addEventListener('click',function ()
     {
@@ -18,6 +18,10 @@ $(document).ready(function(){
             scrollTop: $(section).offset().top
         });
     });
+
+    document.getElementById("contact-us").onclick = function () {
+        location.href = "contato.html";
+    };
 
     //Funções
     // Função Scroll down suave para botões
