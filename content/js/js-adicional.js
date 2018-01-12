@@ -7,7 +7,7 @@ $(document).ready(function(){
 
     document.getElementById("navbar-company-about").addEventListener('click',function ()
     {
-        if(window.location.pathname == "/CPConsult/index.html")
+        if(window.location.pathname == "/CPConsult/index.html" || window.location.pathname == "/CPConsult/")
         {
             scrollToItem("company-about-section");
         }
@@ -17,22 +17,13 @@ $(document).ready(function(){
         }
     });
 
-    // Scripts para scroll down de página quando clica nos links da navbar
-    $("nav").find("a").click(function(e) {
-        e.preventDefault();
-        var section = $(this).attr("href");
-        $("html, body").animate({
-            scrollTop: $(section).offset().top
-        });
-    });
-
-    document.getElementById("contact-us").onclick = function () {
-        location.href = "contato.html";
-    };
-
-    document.getElementById("btn-portfolio").onclick = function () {
+    $("#btn-portfolio, #btn-see-portfolio").click(function() { 
         location.href = "portifolio.html";
-    };
+    }); 
+
+    /*document.getElementById("btn-portfolio").onclick = function () {
+        location.href = "portifolio.html";
+    };*/
 
     //Funções
     // Função Scroll down suave para botões

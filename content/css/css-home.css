@@ -82,6 +82,10 @@ img.presenting-logo {
 }
 
 /* Estilos Navbar */
+#navbar-company-about:hover {
+    cursor: pointer;
+}
+
 button {
     text-transform: uppercase;
 }
@@ -109,6 +113,20 @@ nav.navbar {
 
 #btn-portfolio {
     padding-right: 0.1em;
+}
+
+.dropdown-menu {
+    border: 1px solid #e9ecef;
+    background-color: #0b171e;
+}
+
+.dropdown-menu > .dropdown-item {
+    color: #fff;
+}
+
+.dropdown-menu > .dropdown-item:hover {
+    color: #0b171e;
+    background-color: rgba(255,255,255,.75);;
 }
 
 /* Estilos Containers */
@@ -229,6 +247,12 @@ nav.navbar {
     }
  }
 
+ @media (max-width: 767px) {
+    .dropdown-menu > .dropdown-item {
+        white-space: normal !important;
+    }
+ }
+
 @media screen and (max-width: 513px){
     .section-left {
         margin-left: 0;
@@ -246,6 +270,12 @@ nav.navbar {
     .footer {
         height: 120px;
     }    
+}
+
+@media screen and (max-width: 405px){
+    .wrap {
+        display: block !important;
+    }
 }
 
 @media screen and (max-width: 350px){

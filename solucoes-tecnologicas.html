@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="content/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="content/css/css-home.css" rel="stylesheet">
+    <link href="content/css/css-pages-portfolio.css" rel="stylesheet">
 
     <title>CPConsult</title>
   </head>
@@ -19,7 +20,7 @@
                 <a href="index.html"><img class="presenting-logo img-fluid" src="content/images/logo.png" alt="Logo"></a>
             </div>
             <div class="company-call">Assessoria e Consultoria</div>
-            <button type="button" id="company-about-button" class="btn btn-primary btn-lg">
+            <button type="button" id="company-about-button" class="btn btn-primary btn-lg" style="visibility: hidden;">
             <div class="oi oi-info info-company"></div> Sobre a Empresa
             </button>
         </div>
@@ -35,8 +36,8 @@
             
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a id="navbar-company-about" class="nav-link">A Empresa<span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a id="navbar-company-about" class="nav-link" href="#company-about-section">A Empresa<span class="sr-only">(current)</span></a>
             </li>
 
             <div class="btn-group">
@@ -58,54 +59,27 @@
             </li>
             </ul>
             <span class="navbar-text">
-                <button type="button" id="btn-see-portfolio" class="btn btn-outline-primary" href="portifolio.html">Veja nosso Portifólio</button>
+                <button type="button" class="btn btn-outline-primary">Veja nosso Portifólio</button>
             </span>
         </div>
     </nav>
     <!-- Fim Navbar -->
 
     <!-- Início Corpo -->
-    <!-- Seção "Sobre A Empresa" -->
-    <section id="company-about-section" class="section section-only-left container-fluid">
-        <div class="container-fluid company-about-inner section-inner section-left col-7">
-            <h2>Sobre a Empresa</h2>
-            <p class="text-justify"> A <span class="font-weight-bold">CP ASSESSORIA E CONSULTORIA</span> é uma empresa especializada em Gestão e Gerenciamento, Inovações Tecnológicas, Sistemas de Segurança, 
-                Projetos e Treinamentos, com atuação em todo o território nacional. Contamos com parcerias estratégicas com profissionais e empresas
-                fornecedoras de soluções e, também, com renomadas instituições de ensino para atender, de forma personalizada, as necessidades dos 
-                nossos clientes.
+    <section id="service" class="section section-only-left container-fluid">
+        <div class="container-fluid security-management-inner section-inner col-10">
+            <h2>Soluções Tecnológicas</h2>
+            <h3>Objetivo:</h3>
+            <p class="text-justify">Auxiliar nossos clientes na aquisição e ampliação do porque tecnológico voltado para as atividades de proteção e
+                controle.
             </p>
-        </div>
-    </section>
 
-    <!-- Seção "Missão" -->
-    <section id="company-mission-section" class="section section-only-left container-fluid">
-        <div class="container-fluid company-mission-inner section-inner section-right col-7">
-            <h2>Missão</h2>
-            <p class="text-justify">Atender e superar as expectativas dos nossos clientes e parceiros, fornecendo soluções personalizadas e atualizadas, com qualidade e
-                qualificação diferenciada. 
-            </p>
-        </div>
-    </section>
-
-    <!-- Seção "Visão" -->
-    <section id="company-vision-section" class="section section-only-left container-fluid">
-        <div class="container-fluid company-vision-inner section-inner section-left col-7">
-            <h2>Visão</h2>
-            <p class="text-justify">Tomar-se uma empresa referência no mercado nacional.</p>
-        </div>
-    </section>
-
-    <!-- Seção "Valores" -->
-    <section id="company-values-section" class="section section-only-left container-fluid">
-        <div class="container-fluid company-values-inner section-inner section-right col-7">
-            <h2>Valores</h2>
-            <p class="text-justify">Nossas atividades serão sempre desenvolvidas dentro dos limites legais, tendo como parãmetros o ordenamento jurídico brasileiro e demais
-                legislações vigentes. 
-            </p>
-            <p class="text-justify">
-                O senso de legalidade, respeito às pessoas e aos direitos humanos deve orientar a conduta e procedimentos de todos os envolvidos nos
-                processos.
-            </p>
+            <h3>Dos Serviços:</h3>
+            <ul class="list-group">
+                <li class="list-group-item">Projetos e acompanhamentos (controle de acesso de pessoas, veículos e cargas, segurança eletrônica)</li>
+                <li class="list-group-item">Barreiras físicas perimetrais e contra-inteligência, drones, softwares de gestão e monitoramento</li>
+            </ul>
+            <img src="content/images/portfolio-4-clipped.jpg" class="img-fluid" alt="Responsive image">
         </div>
     </section>
     <!-- Fim Corpo -->

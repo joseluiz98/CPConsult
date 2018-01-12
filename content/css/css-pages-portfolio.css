@@ -1,0 +1,17 @@
+/* Estilos Seção */
+section {
+    color: #0b171e;
+}
+
+.section-inner > img {
+    width: 100%;
+}
+
+.list-group {
+    font-size: 2em !important;
+    padding-bottom: 1em;
+}
+
+h3 {
+    padding-top: 1em;
+}
