@@ -7,7 +7,14 @@ $(document).ready(function(){
 
     document.getElementById("navbar-company-about").addEventListener('click',function ()
     {
-        scrollToItem("company-about-section");
+        if(window.location.pathname == "/CPConsult/index.html")
+        {
+            scrollToItem("company-about-section");
+        }
+        else
+        {
+            window.location.href = "/CPConsult/index.html";
+        }
     });
 
     // Scripts para scroll down de página quando clica nos links da navbar
