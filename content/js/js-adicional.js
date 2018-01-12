@@ -23,6 +23,10 @@ $(document).ready(function(){
         location.href = "contato.html";
     };
 
+    document.getElementById("btn-portfolio").onclick = function () {
+        location.href = "portifolio.html";
+    };
+
     //Funções
     // Função Scroll down suave para botões
     function scrollToItem(itemID) {

@@ -2,23 +2,11 @@
 body, html {
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
-    -moz-osx-font-smoothing: grayscale !important;
     font-weight: 400;
 }
 
 html {
     background-color: #343a40;
-    overflow: scroll;
-    overflow-x: hidden;
-}
-
-::-webkit-scrollbar {
-    width: 0px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
-}
-/* optional: show position indicator in red */
-::-webkit-scrollbar-thumb {
-    background: #FF0000;
 }
 
 body {
@@ -31,7 +19,7 @@ p {
     margin: 1em 0.5em 1em 0;
 }
 
-h1, h2, h3, h4, h6 {
+h1, h2, h3, h4, h5, h6 {
     color: #87868a;
     text-transform: uppercase;
     text-shadow: 0.5px 0.5px #000;
@@ -94,21 +82,6 @@ button {
 nav.navbar {
     font-size: 2em;
     background-color: #0b171e !important;
-}
-
-#btn-portfolio, .dropdown-toggle-split {
-    background-color: #0b171e;
-    color: rgba(255,255,255,.5);
-    text-transform: capitalize;
-    font-size: inherit !important;
-}
-
-#btn-portfolio:hover, .dropdown-toggle-split:hover, #btn-portfolio:focus, .dropdown-toggle-split:focus {
-    color: rgba(255,255,255,.75);
-}
-
-#btn-portfolio {
-    padding-right: 0.1em;
 }
 
 /* Estilos Containers */
@@ -222,12 +195,6 @@ nav.navbar {
         margin-right: auto;
     }
 }
-
-@media (min-width: 768px) and (max-width: 1000px) {
-    .collapse {
-        display: none !important;
-    }
- }
 
 @media screen and (max-width: 513px){
     .section-left {
