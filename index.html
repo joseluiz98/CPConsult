@@ -26,10 +26,10 @@
     </div>
     <!-- Fim Apresentação -->
 
-    <!-- Início Navbar -->    
-    <nav id="service" class="navbar navbar-expand-md navbar-dark bg-dark">
+    <!-- Início Navbar -->
+    <nav id="service" class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
             <a class="navbar-brand" href="index.html">CPConsult</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button id="teste" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
@@ -40,25 +40,33 @@
             </li>
 
             <div class="btn-group">
-            <button type="button" id="btn-portfolio" class="btn">Portifólio</button>
+            <button type="button" id="btn-portfolio" class="btn"
+            onclick="window.location.href='pages/portifolio.html'; return false;">
+                Portifólio
+            </button>
+            
             <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="sr-only">Toggle Dropdown</span>
             </button>
             <div class="dropdown-menu">
-                <a class="dropdown-item" href="gestao-de-seguranca.html#service">Gestão de Segurança</a>
-                <a class="dropdown-item" href="gestao-de-riscos.html#service">Gestão de Riscos</a>
-                <a class="dropdown-item" href="servicos-especializados.html#service">Serviços Especializados</a>
-                <a class="dropdown-item" href="solucoes-tecnologicas.html#service">Soluções Tecnológicas</a>
-                <a class="dropdown-item" href="palestras-e-treinamentos.html#service">Palestras, Treinamentos e Cursos</a>
+                <a class="dropdown-item" href="pages/gestao-de-seguranca.html#service">Gestão de Segurança</a>
+                <a class="dropdown-item" href="pages/gestao-de-riscos.html#service">Gestão de Riscos</a>
+                <a class="dropdown-item" href="pages/servicos-especializados.html#service">Serviços Especializados</a>
+                <a class="dropdown-item" href="pages/solucoes-tecnologicas.html#service">Soluções Tecnológicas</a>
+                <a class="dropdown-item" href="pages/palestras-e-treinamentos.html#service">Palestras, Treinamentos e Cursos</a>
             </div>
             </div>
             
             <li class="nav-item">
-                <a class="nav-link" id="contact-us" href="contato.html">Contato</a>
+                <a class="nav-link" id="contact-us" href="pages/contato.html">Contato</a>
             </li>
             </ul>
             <span class="navbar-text">
-                <button type="button" id="btn-see-portfolio" class="btn btn-outline-primary" href="portifolio.html">Veja nosso Portifólio</button>
+                
+            <button class="btn btn-outline-primary"
+            onclick="window.location.href='pages/portifolio.html'; return false;">
+                Veja nosso Portifólio
+            </button>
             </span>
         </div>
     </nav>
@@ -121,7 +129,7 @@
     <!-- Fim Footer -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
     <script src="content/js/js-adicional.js"></script>

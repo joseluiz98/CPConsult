@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link href="content/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="content/css/css-home.css" rel="stylesheet">
-    <link href="content/css/css-pages-portfolio.css" rel="stylesheet">
+    <link href="../content/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../content/css/css-home.css" rel="stylesheet">
+    <link href="../content/css/css-contato.css" rel="stylesheet">
 
     <title>CPConsult</title>
   </head>
@@ -17,7 +17,7 @@
     <div class="presenting">
             <div class="presenting-inner">
               <div class="presenting-logo-wrapper">
-                <a href="index.html"><img class="presenting-logo img-fluid" src="content/images/logo.png" alt="Logo"></a>
+                <a href="../index.html"><img class="presenting-logo img-fluid" src="../content/images/logo.png" alt="Logo"></a>
             </div>
             <div class="company-call">Assessoria e Consultoria</div>
             <button type="button" id="company-about-button" class="btn btn-primary btn-lg" style="visibility: hidden;">
@@ -27,21 +27,24 @@
     </div>
     <!-- Fim Apresentação -->
 
-    <!-- Início Navbar -->    
-    <nav id="service" class="navbar navbar-expand-md navbar-dark bg-dark">
+    <!-- Início Navbar -->
+    <nav id="service" class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
             <a class="navbar-brand" href="index.html">CPConsult</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a id="navbar-company-about" class="nav-link" href="#company-about-section">A Empresa<span class="sr-only">(current)</span></a>
+                <a id="navbar-company-about" class="nav-link" href="../index.html">A Empresa<span class="sr-only">(current)</span></a>
             </li>
-
+            
             <div class="btn-group">
-            <button type="button" id="btn-portfolio" class="btn">Portifólio</button>
+            <button type="button" id="btn-portfolio" class="btn"
+            onclick="window.location.href='portifolio.html'; return false;">
+                Portifólio
+            </button>
             <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="sr-only">Toggle Dropdown</span>
             </button>
@@ -54,33 +57,64 @@
             </div>
             </div>
             
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" id="contact-us" href="contato.html">Contato</a>
             </li>
             </ul>
             <span class="navbar-text">
-                <button type="button" id="btn-see-portfolio" class="btn btn-outline-primary" href="portifolio.html">Veja nosso Portifólio</button>
+                <button class="btn btn-outline-primary"
+            onclick="window.location.href='portifolio.html'; return false;">
+                Veja nosso Portifólio
+            </button>
             </span>
         </div>
     </nav>
+
     <!-- Fim Navbar -->
 
     <!-- Início Corpo -->
-    <section id="service" class="section section-only-left container-fluid">
-        <div class="container-fluid security-management-inner section-inner col-10">
-            <h2>Soluções Tecnológicas</h2>
-            <h3>Objetivo:</h3>
-            <p class="text-justify">Auxiliar nossos clientes na aquisição e ampliação do porque tecnológico voltado para as atividades de proteção e
-                controle.
-            </p>
+    <section class="container contact-form">
+        <form>
+            <div class="form-group row">
+                <label for="inputName" class="col-sm-2 col-form-label">Nome:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" placeholder="Digite seu nome">
+                </div>
+            </div>
 
-            <h3>Dos Serviços:</h3>
-            <ul class="list-group">
-                <li class="list-group-item">Projetos e acompanhamentos (controle de acesso de pessoas, veículos e cargas, segurança eletrônica)</li>
-                <li class="list-group-item">Barreiras físicas perimetrais e contra-inteligência, drones, softwares de gestão e monitoramento</li>
-            </ul>
-            <img src="content/images/portfolio-4-clipped.jpg" class="img-fluid" alt="Responsive image">
-        </div>
+            <div class="form-group row">
+                <label for="inputLastName" class="col-sm-2 col-form-label">Sobrenome:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" placeholder="Digite seu sobrenome">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputPhone" class="col-sm-2 col-form-label">Telefone:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" placeholder="Digite um telefone para contato">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputCompany" class="col-sm-2 col-form-label">Empresa:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" placeholder="Digite o nome de sua empresa">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputMessage" class="col-sm-2 col-form-label">Sua mensagem:</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="container" style="text-align: right">
+                <div>
+                    <button type="submit" class="btn btn-primary mb-2">Enviar</button>
+                </div>
+            </div>
+        </form>
     </section>
     <!-- Fim Corpo -->
 
@@ -96,6 +130,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-    <script src="content/js/js-adicional.js"></script>
+    <script src="../content/js/js-adicional.js"></script>
   </body>
 </html>

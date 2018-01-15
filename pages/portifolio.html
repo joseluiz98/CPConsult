@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link href="content/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="content/css/css-home.css" rel="stylesheet">
-    <link href="content/css/css-portifolio.css" rel="stylesheet">
+    <link href="../content/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../content/css/css-home.css" rel="stylesheet">
+    <link href="../content/css/css-portifolio.css" rel="stylesheet">
 
     <title>CPConsult</title>
   </head>
@@ -17,7 +17,7 @@
     <div class="presenting">
             <div class="presenting-inner">
               <div class="presenting-logo-wrapper">
-                <a href="index.html"><img class="presenting-logo img-fluid" src="content/images/logo.png" alt="Logo"></a>
+                <a href="../index.html"><img class="presenting-logo img-fluid" src="../content/images/logo.png" alt="Logo"></a>
             </div>
             <div class="company-call">Assessoria e Consultoria</div>
             <button type="button" id="company-about-button" class="btn btn-primary btn-lg" style="visibility: hidden;">
@@ -28,7 +28,7 @@
     <!-- Fim Apresentação -->
 
     <!-- Início Navbar -->    
-    <nav id="service" class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav id="service" class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
             <a class="navbar-brand" href="index.html">CPConsult</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -37,11 +37,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a id="navbar-company-about" class="nav-link" href="#company-about-section">A Empresa<span class="sr-only">(current)</span></a>
+                <a id="navbar-company-about" class="nav-link" href="../index.html">A Empresa<span class="sr-only">(current)</span></a>
             </li>
 
             <div class="btn-group">
-            <button type="button" id="btn-portfolio" class="btn">Portifólio</button>
+            <button type="button" id="btn-portfolio" class="btn"
+            onclick="window.location.href='portifolio.html'; return false;">
+                Portifólio
+            </button>
             <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="sr-only">Toggle Dropdown</span>
             </button>
@@ -59,7 +62,10 @@
             </li>
             </ul>
             <span class="navbar-text">
-                <button type="button" id="btn-see-portfolio" class="btn btn-outline-primary" href="portifolio.html">Veja nosso Portifólio</button>
+                <button class="btn btn-outline-primary"
+            onclick="window.location.href='portifolio.html'; return false;">
+                Veja nosso Portifólio
+            </button>
             </span>
         </div>
     </nav>
@@ -187,6 +193,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-    <script src="content/js/js-adicional.js"></script>
+    <script src="../content/js/js-adicional.js"></script>
   </body>
 </html>

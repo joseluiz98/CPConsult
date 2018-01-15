@@ -1,35 +1,21 @@
 $(document).ready(function(){
-    // Scripts para scroll down de página quando clica nos botões
-    document.getElementById("company-about-button").addEventListener('click',function ()
-    {
-        scrollToItem("company-about-section");
-    });
+    //Testa se navbar está collapsed ou normal ao evento click
+    $('#company-about-button, #navbar-company-about').click(function () {
+        var id = this.id;
 
-    document.getElementById("navbar-company-about").addEventListener('click',function ()
-    {
-        if(window.location.pathname == "/CPConsult/index.html" || window.location.pathname == "/CPConsult/")
-        {
-            scrollToItem("company-about-section");
+        if($('.navbar-toggler').css('display') == 'block'){
+            $('html, body').animate({
+                scrollTop: $('#company-about-section').offset().top - 20
+            }, 'slow', function () {
+                if(id == "navbar-company-about") {
+                    $('.navbar-collapse').collapse('hide');
+                }
+            });
         }
-        else
-        {
-            window.location.href = "/CPConsult/index.html";
+        else {
+            document.getElementById("company-about-section").scrollIntoView({
+                behavior: 'smooth'
+            });
         }
     });
-
-    $("#btn-portfolio, #btn-see-portfolio").click(function() { 
-        location.href = "portifolio.html";
-    }); 
-
-    /*document.getElementById("btn-portfolio").onclick = function () {
-        location.href = "portifolio.html";
-    };*/
-
-    //Funções
-    // Função Scroll down suave para botões
-    function scrollToItem(itemID) {
-        document.getElementById(itemID).scrollIntoView({ 
-            behavior: 'smooth' 
-          });
-    }
 })

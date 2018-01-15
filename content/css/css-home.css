@@ -255,21 +255,21 @@ nav.navbar {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1000px) {
-    .collapse {
-        display: none !important;
-    }
- }
-
  @media (max-width: 767px) {
     .dropdown-menu > .dropdown-item {
         white-space: normal !important;
     }
 
-    #btn-see-portfolio {
+    .navbar-text {
         display: none;
     }
  }
+
+@media screen and (max-width: 665px){
+    .container.contact-form {
+        padding: 2em 1em !important;
+    }
+}
 
 @media screen and (max-width: 513px){
     .section-left {
@@ -307,3 +307,17 @@ nav.navbar {
         width: 98% !important;
     }
 }
+
+/* Media Queries Compostas */
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    .collapse {
+        display: none !important;
+    }
+ }
+
+ @media (min-width: 575px) and (max-width: 767px) {
+    .container.contact-form {
+        max-width: none !important;
+    }
+ }
