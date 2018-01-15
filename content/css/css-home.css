@@ -1,4 +1,7 @@
 /* Estilos Gerais */
+a {
+    cursor: pointer;
+}
 body, html {
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
